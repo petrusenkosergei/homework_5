@@ -1,0 +1,186 @@
+.Juggler{
+    width: 1000px;
+    height: 1000px;
+    margin-top: 100px;
+}
+.Juggler_head{
+    width: 70px;
+    height: 80px;
+    background: white;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    border: 2px solid black;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.Juggler_body{
+    width: 150px;
+    height: 200px;
+    background: white;
+    transform: perspective(10px) rotateX(-1deg);
+    border: 2px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+
+
+}
+.Juggler_LeftUpperArm{
+    width: 155px;
+    height: 0;
+    border: 1px solid black;
+    margin-top: -230px;
+    transform-origin: 100%;
+    margin-left: 250px;
+    animation: hand_arm 1s linear infinite;
+}
+
+@keyframes hand_arm {
+
+    0% { transform: rotate(-95deg);
+    }
+    25% {
+        transform: rotate(-90deg);
+    }
+    40% { transform: rotate(-90deg);
+    }
+    45% { transform: rotate(-85deg);
+    }
+    60% { transform: rotate(-85deg);
+    }
+    80% { transform: rotate(-95deg)
+    }
+    100% { transform: rotate(-95deg);}
+}
+
+.Juggler_LeftLowerArm{
+    width: 80px;
+    border: 1px solid black;
+    transform-origin: 0;
+    animation: brush_left 1s linear infinite;
+    animation-delay: 0.29s;
+}
+
+@keyframes brush_left {
+    0% {
+        transform: rotate(90deg);
+    }
+    25% {
+        transform: rotate(0deg);
+    }
+    50% { transform: rotate(-90deg)}
+
+    75%{
+        transform: rotate(-180deg);
+    }
+    100% {
+        transform: rotate(-250deg);
+    }
+}
+
+.Juggler_RightUpperArm {
+    width: 155px;
+    height: 0;
+    border: 1px solid black;
+    transform-origin: 100%;
+    margin-left: 435px;
+    transform: rotate(300grad);
+    animation: hand_arm 1s linear infinite;
+
+}
+
+.Juggler_RightLowerArm {
+    width: 80px;
+    border: 1px solid black;
+    transform-origin: 0;
+    animation: hand_brush_right 1s linear infinite;
+
+}
+@keyframes hand_brush_right {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.Ball {
+    width: 40px;
+    height: 40px;
+    background: red;
+    border-radius: 50%;
+    margin-left: 349px;
+}
+.Ball_LeftOne {
+    animation: Ball_Left 2s linear infinite;
+}
+
+@keyframes Ball_Left {
+    0%    {transform:translate(6px,202px);
+    }
+    12.5% {transform: translate(92px,142px);
+    }
+    25% {transform: translate(108px,-28px);
+    }
+    37.5% {transform: translate(86px,-140px) ;
+    }
+    50% {transform: translate(4px,-212px) ;
+    }
+    62.5% {transform: translate(-79px,-136px) ;
+    }
+    75% {transform: translate(-100px,-25px) ;
+    }
+    87.5% {transform: translate(-91px,115px) ;
+    }
+    100% {transform:translate(4px,186px) ;
+    }
+}
+
+
+.Ball_LeftTwo {
+    animation: Ball_Left 2s linear infinite;
+    animation-delay: 1s;
+}
+
+.Ball_RightOne {
+    animation: Ball_Right 2s linear infinite;
+    animation-delay: 0.5s;
+}
+
+@keyframes Ball_Right {
+    0%    {transform:translate(260px,105px);
+    }
+    12.5% {transform: translate(169px,31px);
+    }
+    25% {transform: translate(156px,-126px);
+    }
+    37.5% {transform: translate(190px,-215px);
+    }
+    50% {transform: translate(249px,-290px) ;
+    }
+    62.5% {transform: translate(330px,-226px);
+    }
+    75% {transform: translate(346px,-126px);
+    }
+    87.5% {transform: translate(340px,32px);
+    }
+    100% {transform:translate(260px,105px) ;
+    }
+}
+
+.Ball_RightTwo {
+    animation: Ball_Right 2s linear infinite;
+    animation-delay: 1.4s;
+}

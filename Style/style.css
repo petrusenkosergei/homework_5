@@ -34,10 +34,10 @@
     margin-top: -230px;
     transform-origin: 100%;
     margin-left: 250px;
-    animation: hand_arm 1s linear infinite;
+    animation: LeftUpperArm 1s linear infinite;
 }
 
-@keyframes hand_arm {
+@keyframes LeftUpperArm {
 
     0% { transform: rotate(-95deg);
     }
@@ -59,11 +59,12 @@
     width: 80px;
     border: 1px solid black;
     transform-origin: 0;
-    animation: brush_left 1s linear infinite;
+    animation: LeftLowerArm 1s linear infinite;
     animation-delay: 0.29s;
+    transform: rotate(90deg);
 }
 
-@keyframes brush_left {
+@keyframes LeftLowerArm {
     0% {
         transform: rotate(90deg);
     }
@@ -95,10 +96,10 @@
     width: 80px;
     border: 1px solid black;
     transform-origin: 0;
-    animation: hand_brush_right 1s linear infinite;
+    animation: RightLowerArm 1s linear infinite;
 
 }
-@keyframes hand_brush_right {
+@keyframes RightLowerArm {
     0% {
         transform: rotate(0deg);
     }
@@ -122,6 +123,7 @@
     background: red;
     border-radius: 50%;
     margin-left: 349px;
+    transform: translate(0px, 0px);
 }
 .Ball_LeftOne {
     animation: Ball_Left 2s linear infinite;
